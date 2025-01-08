@@ -44,3 +44,6 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+# Ignore Angular environment files
+src/enviroment.ts
+src/enviroment.prod.ts
