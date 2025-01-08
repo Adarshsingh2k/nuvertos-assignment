@@ -1,0 +1,36 @@
+<div *ngFor="let alert of alerts; trackBy: trackByIndex">
+  <ngb-alert [type]="alert.type" (close)="close(alert)">
+    {{ alert.message }}
+  </ngb-alert>
+</div>
+
+<app-top-bar></app-top-bar>
+<div class="pannel">
+  <app-doctor-list
+    (doctorSelected)="onDoctorSelected($event)"
+    (deletedDoctor)="onDoctorDeleted($event)"
+  />
+  <div *ngIf="selectedDoctor; else noDoctorSelected" class="doc-det">
+    <app-doctor-details [doctor]="selectedDoctor"></app-doctor-details>
+    <app-appointement-slots
+      [occupiedSlots]="occupiedSlots[selectedDoctor.name] || []"
+      (slotSelected)="onSlotSelected($event)"
+    />
+    <div class="action">
+      <button
+        class="book-btn"
+        [disabled]="!selectedSlot"
+        (click)="bookAppointment()"
+      >
+        Book Appointment
+      </button>
+    </div>
+  </div>
+  <ng-template #noDoctorSelected>
+    <div class="no-doctor">
+      <p class="b-600">Please select a doctor to book an appointment.</p>
+    </div>
+  </ng-template>
+</div>
+
+<router-outlet></router-outlet>

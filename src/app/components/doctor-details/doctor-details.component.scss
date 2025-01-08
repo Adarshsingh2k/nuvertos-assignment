@@ -1,0 +1,21 @@
+.doctor-details {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.details {
+  flex: 1;
+}
+
+.doctor-details img {
+  height: 120px;
+  width: 120px;
+  border-radius: 16px;
+}

@@ -1,0 +1,45 @@
+<ng-template #content lg let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Forecast for {{ weather?.name }}</h4>
+    <button
+      type="button"
+      class="btn-close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>Weather</th>
+          <th>Temperature</th>
+          <th>Humidity</th>
+          <th>Min Temperature</th>
+          <th>Max Temperature</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let day of forecast">
+          <td>{{ day.date }}</td>
+          <td>{{ day.weather }}</td>
+          <td>{{ (day.temperature - 273).toFixed(2) }} °C</td>
+          <td>{{ day.humidity }}%</td>
+          <td>{{ day.temp_min }} °C</td>
+          <td>{{ day.temp_max }} °C</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-template>
+
+<div class="top-bar">
+  <button (click)="openForecast(content)" class="weather">
+    <p>
+      {{ weather?.name }}, {{ (weather?.main?.temp - 273).toFixed(0) }}&deg;C
+    </p>
+  </button>
+  <div class="time">
+    <p>{{ currentTime }}</p>
+  </div>
+</div>

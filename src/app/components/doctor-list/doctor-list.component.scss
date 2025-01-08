@@ -1,0 +1,58 @@
+.doctor-list {
+  background-color: white;
+  border-radius: 8px;
+  width: 290px;
+  padding: 8px 14px;
+  height: 100%;
+}
+.label-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+}
+
+.border-bot {
+  border-bottom: 1px solid #a9a9a9;
+}
+
+p {
+  margin: 0;
+}
+
+.add {
+  background-color: #e6eaf8;
+  border: none;
+  border-radius: 4px;
+}
+
+.del {
+  border: none;
+  background-color: #f6f0f0;
+  border-radius: 4px;
+}
+.doctor-item.selected {
+  background-color: #3355ec;
+  color: white;
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
+.no-doctors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-doctors p {
+  color: #a9a9a9;
+  font-size: 24px;
+  text-align: center;
+}

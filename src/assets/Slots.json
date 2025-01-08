@@ -1,0 +1,51 @@
+{
+  "morning": {
+    "slots": [
+      {"time": "09:00 AM", "is_selected": false, "is_occupied": false},
+      {"time": "09:15 AM", "is_selected": false, "is_occupied": false},
+      {"time": "09:30 AM", "is_selected": false, "is_occupied": false},
+      {"time": "09:45 AM", "is_selected": false, "is_occupied": false},
+      {"time": "10:00 AM", "is_selected": false, "is_occupied": false},
+      {"time": "10:15 AM", "is_selected": false, "is_occupied": false},
+      {"time": "10:30 AM", "is_selected": false, "is_occupied": false},
+      {"time": "10:45 AM", "is_selected": false, "is_occupied": false},
+      {"time": "11:00 AM", "is_selected": false, "is_occupied": false},
+      {"time": "11:15 AM", "is_selected": false, "is_occupied": false},
+      {"time": "11:30 AM", "is_selected": false, "is_occupied": false},
+      {"time": "11:45 AM", "is_selected": false, "is_occupied": false},
+      {"time": "12:00 PM", "is_selected": false, "is_occupied": false}
+    ]
+  },
+  "afternoon": {
+    "slots": [
+      {"time": "01:30 PM", "is_selected": false, "is_occupied": false},
+      {"time": "01:45 PM", "is_selected": false, "is_occupied": false},
+      {"time": "02:00 PM", "is_selected": false, "is_occupied": false},
+      {"time": "02:15 PM", "is_selected": false, "is_occupied": false},
+      {"time": "02:30 PM", "is_selected": false, "is_occupied": false},
+      {"time": "02:45 PM", "is_selected": false, "is_occupied": false},
+      {"time": "03:00 PM", "is_selected": false, "is_occupied": false},
+      {"time": "03:15 PM", "is_selected": false, "is_occupied": false},
+      {"time": "03:30 PM", "is_selected": false, "is_occupied": false},
+      {"time": "03:45 PM", "is_selected": false, "is_occupied": false},
+      {"time": "04:00 PM", "is_selected": false, "is_occupied": false}
+    ]
+  },
+  "evening": {
+    "slots": [
+      {"time": "05:00 PM", "is_selected": false, "is_occupied": false},
+      {"time": "05:15 PM", "is_selected": false, "is_occupied": false},
+      {"time": "05:30 PM", "is_selected": false, "is_occupied": false},
+      {"time": "05:45 PM", "is_selected": false, "is_occupied": false},
+      {"time": "06:00 PM", "is_selected": false, "is_occupied": false},
+      {"time": "06:15 PM", "is_selected": false, "is_occupied": false},
+      {"time": "06:30 PM", "is_selected": false, "is_occupied": false},
+      {"time": "06:45 PM", "is_selected": false, "is_occupied": false},
+      {"time": "07:00 PM", "is_selected": false, "is_occupied": false},
+      {"time": "07:15 PM", "is_selected": false, "is_occupied": false},
+      {"time": "07:30 PM", "is_selected": false, "is_occupied": false},
+      {"time": "07:45 PM", "is_selected": false, "is_occupied": false},
+      {"time": "08:00 PM", "is_selected": false, "is_occupied": false}
+    ]
+  }
+}

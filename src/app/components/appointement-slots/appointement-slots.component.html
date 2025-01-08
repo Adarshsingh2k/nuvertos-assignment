@@ -1,0 +1,48 @@
+<div class="slot-container">
+  <div>
+    <h3>Morning</h3>
+    <div class="slots">
+      <div
+        *ngFor="let slot of morningSlots"
+        [class.selected]="slot.is_selected"
+        [class.occupied]="slot.is_occupied"
+        (click)="selectSlot(slot)"
+        class="slot-item fs-16 b-600"
+      >
+        {{ slot.time }}
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <div>
+    <h3>Afternoon</h3>
+    <div class="slots">
+      <div
+        *ngFor="let slot of afternoonSlots"
+        [class.selected]="slot.is_selected"
+        [class.occupied]="slot.is_occupied"
+        (click)="selectSlot(slot)"
+        class="slot-item fs-16 b-600"
+      >
+        {{ slot.time }}
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <div>
+    <h3>Evening</h3>
+    <div>
+      <div
+        *ngFor="let slot of eveningSlots"
+        [class.selected]="slot.is_selected"
+        [class.occupied]="slot.is_occupied"
+        (click)="selectSlot(slot)"
+        class="slot-item fs-16 b-600"
+      >
+        {{ slot.time }}
+      </div>
+    </div>
+  </div>
+</div>

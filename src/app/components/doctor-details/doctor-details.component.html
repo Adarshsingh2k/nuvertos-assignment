@@ -1,0 +1,8 @@
+<div class="doctor-details" *ngIf="doctor">
+  <img [src]="doctor.image_url" alt="Doctor Image" />
+  <div class="details">
+    <p class="fs-16 b-600">{{ doctor.name }}</p>
+    <p class="fs-16 b-400">{{ doctor.qualification }}</p>
+    <p class="fs-16 b-400">{{ doctor.description }}</p>
+  </div>
+</div>

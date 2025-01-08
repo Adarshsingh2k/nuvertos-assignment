@@ -1,0 +1,32 @@
+.slot-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px;
+}
+
+.slots {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.slot-item {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 135px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slot-item.occupied {
+  background-color: #f8d7da;
+  cursor: not-allowed;
+}
+
+.slot-item.selected {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
